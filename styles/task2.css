@@ -1,0 +1,46 @@
+/* Step 3: Define a CSS class named section */
+.section {
+    padding: 10px;
+}
+
+/* Step 5: Define a CSS class named label */
+.label {  
+    font-weight: bold;
+}
+
+/* Step 7: Define a CSS class named description */
+.description {
+    font-style: italic;
+    border-top: 2px solid #495E57;
+}
+
+/* Step 10: Define a CSS class named item-name */
+.item-name {
+    margin: 25px;
+    font-size: 12px;
+}
+
+/* Step 12: Define a CSS rule for the b element */
+b {
+    float: right;
+    margin-top: -15px; /* Step 13 */
+    color: darkcyan;   /* Step 14 */
+}
+
+/* Step 15-18: Child combinator for h3 tags that follow div tags */
+div > h3 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #495E57;
+}
+
+/* Step 19: Adjacent sibling combinator for items of class low that follow class label */
+.label + .low {
+    color: brown; 
+}
+
+/* Step 20: General sibling combinator for div tags that follow other div tags */
+div ~ div {
+    color: rgb(90, 90, 90);
+}
