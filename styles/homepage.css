@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('/assets/DALL·E\ 2024-08-19\ 17.41.18\ -\ A\ high-quality\ image\ of\ a\ Mediterranean\ chef\ preparing\ food\ in\ a\ rustic\ kitchen.\ The\ chef\ should\ be\ focused\ and\ passionate\,\ with\ warm\ lighting\ and\ an\ .webp');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.info-box {
+    background-color: #f8e8dd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 20px; /* Space between rows when wrapped */
+}
+
+.info-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #c87941;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .info-box {
+        width: 100%;
+        padding: 15px;
+    }
+}
